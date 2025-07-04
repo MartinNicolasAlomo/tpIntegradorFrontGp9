@@ -1,0 +1,282 @@
+/*//////////////////////////////////////////////////////*/
+/*                 ESTILOS GLOBALES                     */
+/*//////////////////////////////////////////////////////*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(35, 35, 35);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(232, 89, 37);
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(19, 19, 19);
+}
+
+header>a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 1.4rem;
+}
+
+.logo>a {
+    text-decoration: none;
+    color: white;
+}
+
+.barra-busqueda {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 275px;
+    border: 1px solid rgb(19, 19, 19);
+
+}
+
+.carrito {
+    font-size: 1rem;
+}
+
+.link {
+    background-color: rgb(232, 89, 37);
+    color: rgb(19, 19, 19);
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.link-referenciado {
+    background-color: rgb(19, 19, 19);
+    color: rgb(232, 89, 37);
+    font-weight: bolder;
+    padding: 30px;
+}
+
+#boton-modo-oscuro {
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid rgb(141, 141, 141);
+    color: rgb(19, 19, 19);
+    border-radius: 9px;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+
+#boton-modo-oscuro:hover {
+    background-color: rgb(43, 232, 37);
+    cursor: pointer;
+}
+
+body.dark-mode #boton-modo-oscuro {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border: 2px solid rgb(19, 19, 19);
+}
+
+#boton-limpiar-carrito {
+    border: 2px solid rgb(19, 19, 19);
+    background-color: rgb(200, 255, 0);
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+    border-radius: 9px;
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*//////////////////////////////////////////////////////*/
+/*                 SECCION PRODUCTOS                    */
+/*//////////////////////////////////////////////////////*/
+
+.seccion-productos {
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: bolder;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.carta-producto {
+    width: 180px;
+    min-height: 250px;
+    padding: 15px;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid rgb(141, 141, 141);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+body.dark-mode .carta-producto {
+    background-color: rgb(56, 56, 56);
+    border: 2px solid rgb(12, 12, 12);
+}
+
+.contenedor-imagen-producto {
+    height: 250px;
+}
+
+.imagen-producto {
+    width: 160px;
+    height: 235px;
+    border: 0.5px solid rgb(15, 15, 15);
+    border-radius: 5px;
+}
+
+.imagen-producto:hover {
+    transform: scale(1.08);
+    border: 2px solid rgb(232, 89, 37);
+}
+
+.contenedor-nombre-producto {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.nombre-producto {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+
+
+.contenedor-precio-producto {
+    height: 30px;
+}
+
+.precio-producto {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(194, 103, 0);
+}
+
+
+body.dark-mode .precio-producto {
+    color: rgb(255, 195, 64);
+}
+
+
+.contenedor-boton-producto {
+    height: 40px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.boton-agregar {
+    width: 140px;
+    height: 30px;
+    background-color: rgb(4, 130, 16);
+    font-weight: bolder;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.boton-agregar:hover {
+    background-color: rgb(43, 232, 37);
+    cursor: pointer;
+}
+
+
+/*
+.boton-eliminar {
+    background-color: rgb(255, 0, 0);
+    border-radius: 6px;
+    display: flex;
+    width: 130px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+}
+
+.boton-agregar {
+    background-color: rgb(9, 255, 0);
+    border-radius: 6px;
+    display: flex;
+    width: 130px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+}
+*/
+
+
+
+/*//////////////////////////////////////////////////////*/
+/*                 SECCION ALUMNOS                      */
+/*//////////////////////////////////////////////////////*/
+
+.seccion-alumnos {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 89, 37);
+    justify-content: center;
+    text-align: center;
+}
+
+#integrantes {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
