@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoservicio </title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/carrito.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo2.png" alt="">
-            <h3>PlayZone Express</h1>
-         </div>
-         <nav>
-            <a href="index.html" >Inicio</a>
-            <a href="producto.html" >Productos</a>
-            <a href="carrito.html" >Carrito</a>
-         </nav>
+     <!-- Encabezado -->
+    <header class="header">
+        <a href="#">
+            <h3 class="logo">Autoservcicio</h3>
+        </a>
+
+        <nav>
+            <a class="link" href="index.html">Inicio</a>
+            <a class="link" href="productos.html">Productos</a>
+            <a class="link-referenciado" href="carrito.html">Carrito</a>
+        </nav>
+        <img src="" alt="">
+        <div class="nombre-alumno"></div>
+        <button id="boton-modo-oscuro">Modo Claro</button>
+
     </header>
+
+    <!--Seccion productos del carrito-->
+
     <section class="contenedor-carrito">
         <div class="titulo-carrito">
             <h1 >Productos seleccionados</h1>
@@ -32,8 +40,20 @@
         <div class="info-total" id="info-total">
             <p id="cantidad-carrito">Cantidad:0</p>
             <p id="total-carrito">Total : $$0.00</p>
-            <button id="btn-finalizar">Finalizar Compra</button>
+            <button id="boton-finalizar">Finalizar Compra</button>
         </div>
     </section>
+
+     <!-- Footer y Datos de los Integrates del Grupo -->
+    <footer>
+        <section class="seccion-alumnos">
+            <h1>GRUPO 9</h1>
+
+            <div id="integrantes">
+                <h2>Nahuel Vega y Martín Alomo</h2>
+            </div>
+
+        </section>
+    </footer>
 </body>
 </html>

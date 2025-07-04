@@ -3,36 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PlayZone Express</title>
-  <link rel="stylesheet" href="css/index.css" />
+  <title>Autoservcicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="img/logo2.png" type="image/x-icon">
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-    <img src="img/logo2.png" alt="">
-        <h1>PlayZone Express</h1>
-    </div>
-    <button id="toggleMode">Cambiar Modo</button>
-  </header>
-  <main>
-    <div class="contenedor">
+  <header class="header">
+        <a href="#">
+            <h3 class="logo">Autoservcicio</h3>
+        </a>
+        <button id="boton-modo-oscuro">Modo Claro</button>
+
+    </header>
+  <section class="bienvenida">
+    <div class="contenedor-bienvenida">
         <p>Tus películas favoritas y los mejores juegos te esperan aquí, listos para que vivas cada historia, conquistes cada nivel y disfrutes de la mejor experiencia sin salir de casa.</p>
 
-        <div class="input-container">
+        <div class="input-contenedor-bienvenida">
             <label  id="nombreCli" for="nombre">Ingrese su nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." />
-            <button id="btn-continuar">Ingresar</button>
+            <button id="boton-continuar">Ingresar</button>
         </div>
     </div>
-  </main>
-  <!--Pasar al js-->
-  <script>
-    const toggleButton = document.getElementById("toggleMode");
-    toggleButton.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  </script>
+  </section>
+  <!-- Footer y Datos de los Integrates del Grupo -->
+  <footer>
+        <section class="seccion-alumnos">
+            <h1>GRUPO 9</h1>
+
+            <div id="integrantes">
+                <h2>Nahuel Vega y Martín Alomo</h2>
+            </div>
+
+        </section>
+    </footer>
 </body>
 </html>
