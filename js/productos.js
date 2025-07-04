@@ -157,7 +157,10 @@ const listaProductos = [
 // =================    MOSTRAR PRODUCTOS    =================
 // mostrarProductos() crea dinamicamente todas las tarjetas de cada producto con sus datos y de forma uniforme, 
 // sin necesidad de cargarlas a mano en el .html, y las coloca dentro de su contenedor
-let contendorProductos = document.querySelector(".contenedor-productos");
+
+
+
+/*let contendorProductos = document.querySelector(".contenedor-productos");
 
 function mostrarProductos(listaProductos) {
     let htmlProductos = "";
@@ -176,6 +179,7 @@ function mostrarProductos(listaProductos) {
                 </div>
                 <div class="contenedor-boton-producto">
                     <button class="boton-agregar" data-id="${producto.id}">Agregar al carrito</button>
+                    <button class="boton-eliminar" data-id="${producto.id}">Eliminar del carrito</button>
                 </div>
             </div>
         `;
@@ -188,40 +192,104 @@ function mostrarProductos(listaProductos) {
             agregarAlCarrito(id)
         });
     });
+        document.querySelectorAll(".boton-agregar").forEach(boton => {
+        boton.addEventListener("click", function () {
+            const id = parseInt(this.dataset.id);
+            agregarAlCarrito(id)
+        });
+    });
+}
+
+*/
+
+
+//let contendorProductos = document.querySelector(".contenedor-productos");
+let contenedorPeliculas = document.querySelector(".contenedor-peliculas");
+let contenedorVideojuegos = document.querySelector(".contenedor-videojuegos");
+
+function mostrarProductos(listaProductos) {
+    let htmlPeliculas = "";
+    let htmlVideojuegos = "";
+
+    listaProductos.forEach(producto => {
+        let carta = `
+            <div class="carta-producto">
+                <div class="contenedor-imagen-producto">
+                    <img class="imagen-producto" src="${producto.img}" alt="${producto.nombre}">
+                </div>
+                <div class="contenedor-nombre-producto">
+                    <h3 class="nombre-producto">${producto.nombre}</h3>
+                </div>
+                <div class="contenedor-precio-producto">
+                    <p class="precio-producto">$${producto.precio.toFixed(2)}</p>
+                </div>
+                <div class="contenedor-boton-producto">
+                    <button class="boton-agregar-producto" data-id="${producto.id}">Agregar</button>
+                    <button class="boton-eliminar-producto" data-id="${producto.id}">Eliminar</button>
+                </div>
+            </div>
+        `;
+
+        if (producto.categoria === "Película") htmlPeliculas += carta;
+        else if (producto.categoria === "Videojuego") htmlVideojuegos += carta;
+    });
+
+    contenedorPeliculas.innerHTML = htmlPeliculas;
+    contenedorVideojuegos.innerHTML = htmlVideojuegos;
+
+    document.querySelectorAll(".boton-agregar-producto").forEach(boton => {
+        boton.addEventListener("click", function () {
+            const id = parseInt(this.dataset.id);
+            agregarAlCarrito(id)
+        });
+    });
+
+    document.querySelectorAll(".boton-eliminar-producto").forEach(boton => {
+        boton.addEventListener("click", function () {
+            const id = parseInt(this.dataset.id);
+            eliminarDelCarrito(id);
+        });
+    });
 }
 
 
 
-// =================    AGREGAR Y GUARDAR CARRITO    =================
+
+// =================    AGREGAR, ELIMINAR Y GUARDAR CARRITO    =================
 // agregarAlCarrito() busca si el producto ya se encuentra en el carrito. 
-// Si ya se encuentra en el carrito, le aumenta la cantidad +1, pero si es nuevo, lo agrega completo
+// Si ya se encuentra en el carrito, solo le aumenta la cantidad +1, pero si es nuevo, lo agrega completo
+// eliminarDelCarrito() tambien busca si el producto ya se encuentra en el carrito. 
+// Si ya se encuentra en el carrito, le reduce la cantidad +1, y si la cantidad alcanza 0, lo elimina completo del carrito
+// y si no existe pone un alert para notificarlo
 // guardarCarrito() transforma el array en formato JSON y lo guarda en el localStorage
 function agregarAlCarrito(id) {
     let producto = listaProductos.find(producto => producto.id === id);
     let productoExistente = carrito.find(producto => producto.id === id);
-    /*    console.log(producto.nombre);
-        console.log(carrito);
-        console.log('------------------------');*/
 
-    if (productoExistente) {
-        productoExistente.cantidad += 1;
-        /*        console.log("ya exciste +1");
-                console.log(productoExistente.nombre);
-                console.log(productoExistente.cantidad);*/
-    }
-    else {
-        carrito.push({ ...producto, cantidad: 1 });
-        /*        console.log("nuevo productos");
-                console.log(producto.nombre);
-                console.log(producto.cantidad);
-                 console.log(producto.cantidad);*/
-    }
+    if (productoExistente) productoExistente.cantidad += 1;
+    else carrito.push({ ...producto, cantidad: 1 });
+
     guardarCarrito(carrito);
 }
 
 function guardarCarrito() {
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
+
+function eliminarDelCarrito(id) {
+    let productoExistente = carrito.find(producto => producto.id === id);
+
+    if (productoExistente) {
+        productoExistente.cantidad -= 1;
+        if (productoExistente.cantidad <= 0) {
+            carrito = carrito.filter(producto => producto.id !== id);   //      AGREGAR     TOAST
+        }
+    }
+    else alert("El producto no se encuentra en el carrito");
+
+    guardarCarrito(carrito);
+}
+
 
 
 

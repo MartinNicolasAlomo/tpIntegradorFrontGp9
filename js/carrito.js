@@ -1,6 +1,8 @@
 //INICIALIZO EL CARRITO
 let carrito= JSON.parse(localStorage.getItem("carrito")) || []; 
 
+
+
 // =================    MOSTRAR CARRITO    ======================
 // -mostrarCarrito() crea dinamicamente todas las tarjetas de cada producto dentro del carrito 
 // -Agrega las funcionalizades de boton
@@ -41,6 +43,8 @@ function mostrarCarrito(){
     actualizarTotales(totalCarrito,cantidadCarrito);
 }
 
+
+
 // =================    VACIAR CARRITO    ======================
 // -Vacia todo los elementos del carrito 
 // -guarda el carrito vacio en el localStorage
@@ -58,6 +62,8 @@ function vaciarCarrito(){
     
 }
 
+
+
 // =================    Actualizar Totales    ======================
 // -Actualizo la informacion de total y cantidad del carrito
 function actualizarTotales(importeTotal,cantidadTotal){
@@ -66,6 +72,8 @@ function actualizarTotales(importeTotal,cantidadTotal){
     total.textContent="Total = $"+importeTotal;
     cantidad.textContent="Cantidad = "+cantidadTotal;
 }
+
+
 
 // =================    Eliminar Producto    ======================
 // -Elimino el producto que recibo por parametro del carrito y 
@@ -88,6 +96,19 @@ function EliminarProducto(codigoProducto){
     }
 }
 
+
+
+/*
+    VERIFICAR QUE CUANDO SE RESTE UN PROD Y LLEGUE A 0 SE ELIMINE COMO EN EL BOTON ELIMINAR, O DE ULTIMA QUE QUEDE EN CERO Y NO BAJE
+    SINO SIGUE HASTA EL -20 O MAS
+
+    AL RESTAR DENTO DEL IF (    producto.cantidad=producto.cantidad - 1     )
+    Queda mejor (   producto.cantidad -= 1;)
+    Mismo en sumarProd
+
+*/
+
+
 // =================    Restar Producto    ======================
 // -Resto la cantidad del producto que recibo por parametro en el  carrito y 
 //  lo actualizo en el Storage
@@ -107,6 +128,8 @@ function restarProducto(codigoProducto){
         mostrarCarrito();
     }
 }
+
+
 
 // =================    Restar Producto    ======================
 // -Sumo la cantidad del producto que recibo por parametro en el  carrito y 
