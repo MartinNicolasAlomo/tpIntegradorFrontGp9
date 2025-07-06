@@ -80,136 +80,102 @@ const listaProductos = [
     },
 
     {
-        id: 13, nombre: "Supoer Smash Bros. Brawl", precio: 5000, img:
-            "https://m.media-amazon.com/images/M/MV5BY2JlZGIxNjYtYjA5OS00ZDI0LTg0MDktZDNmMzhhNGQxZTc3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 13, nombre: "Vikingos", precio: 5000, img:
+            "https://m.media-amazon.com/images/M/MV5BOTFmZmExYTEtYmE0Mi00MzRmLWE4ZDYtOThiNzNlOTIyODljXkEyXkFqcGc@._V1_.jpg",
+        categoria: "Serie", activo: true
+    },
+
+
+    {
+        id: 14, nombre: "Breaking Bad", precio: 1000, img:
+            "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 14, nombre: "Super Mario Bors.", precio: 1000, img:
-            "https://m.media-amazon.com/images/M/MV5BNTVlZDI0YjUtYzJhMi00NjkyLWE1YjktZDUzNzBmMGYwNDA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 15, nombre: "Black Sails", precio: 4000, img:
+            "https://m.media-amazon.com/images/M/MV5BZGZmOGNjNzUtNTNkMC00ZDU2LThjMDAtZGM2OGRjMjE1OGQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 15, nombre: "Sims 2", precio: 4000, img:
-            "https://m.media-amazon.com/images/M/MV5BMGY3MzRhZTgtMjJmMC00ZTM2LWJlNGMtNTE3NjFiMTRmYTM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 16, nombre: "Game Of Thrones", precio: 3000, img:
+            "https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 16, nombre: "GTA San Andreas", precio: 3000, img:
-            "https://m.media-amazon.com/images/M/MV5BOTYzMzg5MGUtNzhlZS00YWMzLTkwY2EtY2I2MjVmZDUzYjYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 17, nombre: "El Eternauta", precio: 2000, img:
+            "https://m.media-amazon.com/images/M/MV5BYTdjY2U5NjctOTNiNC00ZGM5LWJhNTgtOTkzNWUzMWM4NmM0XkEyXkFqcGc@._V1_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 17, nombre: "GTA Vice City", precio: 2000, img:
-            "https://m.media-amazon.com/images/M/MV5BYTcwMWYzMjgtYjQwYy00ODA2LTlkMTgtMzE0Y2RlYzJlMGI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 18, nombre: "The Office", precio: 800, img:
+            "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 18, nombre: "Counter-Strike", precio: 800, img:
-            "https://m.media-amazon.com/images/M/MV5BOWU1MTVhOTUtNmU0Mi00MWNiLWIyOWQtMDFkOTFmMzc5ZTNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 19, nombre: "Modern Family", precio: 1500, img:
+            "https://m.media-amazon.com/images/M/MV5BMTU2NTU3OTE5NF5BMl5BanBnXkFtZTgwMDAzMjE1NjM@._V1_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 19, nombre: "NFS Most Wanted", precio: 1500, img:
-            "https://m.media-amazon.com/images/M/MV5BYzZlMjBjYjItMzUzOC00YTJlLThiNWQtNjViZjc1MTA2ZGE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 20, nombre: "How I Met Your Mother", precio: 9000, img:
+            "https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 20, nombre: "Residnet Evil 4", precio: 9000, img:
-            "https://m.media-amazon.com/images/M/MV5BZWY3ZjRiNTctYzU2My00NDIwLWI3NTAtNmUwZDBlZjlhYjI4XkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 21, nombre: "Black Mirror", precio: 2500, img:
+            "https://m.media-amazon.com/images/M/MV5BODcxMWI2NDMtYTc3NC00OTZjLWFmNmUtM2NmY2I1ODkxYzczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 21, nombre: "Shadow of the Colossus", precio: 2500, img:
-            "https://m.media-amazon.com/images/M/MV5BMTgxNzgwNmYtNWQ5My00ZjI4LWJmZTEtZDFmMThjNWNlZjg5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 22, nombre: "Peaky Blinders", precio: 3000, img:
+            "https://m.media-amazon.com/images/M/MV5BM2ZiNThlNzItNmY3Ny00NjA2LWJlMjItNTk1NDI3MDMyMTk4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 22, nombre: "God of War 3", precio: 3000, img:
-            "https://m.media-amazon.com/images/M/MV5BM2QxNjZlYTEtOWVkNC00OGUxLTgwNjMtN2Y4Y2ZjMzcwZjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 23, nombre: "The Wire", precio: 2000, img:
+            "https://m.media-amazon.com/images/M/MV5BZWYyNmRhYjktNjBhNC00M2NhLWEzYmMtZDYwNmIyZTRiZWMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 
     {
-        id: 23, nombre: "Black", precio: 2000, img:
-            "https://m.media-amazon.com/images/M/MV5BZDg4MjY2NzEtMjJmYS00NzU3LTk1N2YtYzY3YTUzZDJkM2FkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        categoria: "Videojuego", activo: true
-    },
-
-    {
-        id: 24, nombre: "Mortal Kombat 1", precio: 2000, img:
-            "https://m.media-amazon.com/images/M/MV5BYjhmYTI1OTYtMjVlMy00YjA4LTk1MTAtMTRhZjI4NzM3YTdkXkEyXkFqcGc@._V1_.jpg",
-        categoria: "Videojuego", activo: true
+        id: 24, nombre: "ER: Emergencias", precio: 2000, img:
+            "https://m.media-amazon.com/images/M/MV5BMzM5NjQ4M2QtNWQyMy00OWUxLWIyZjktNmY2ZjMyZjA2NWE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        categoria: "Serie", activo: true
     },
 ]
 
+
+/*
+
+
+
+
+                   ELIMINAR HARDCODEO  -   CONECETAR CON EL TP_BACKEND
+
+
+
+
+*/
 
 
 // =================    MOSTRAR PRODUCTOS    =================
 // mostrarProductos() crea dinamicamente todas las tarjetas de cada producto con sus datos y de forma uniforme, 
 // sin necesidad de cargarlas a mano en el .html, y las coloca dentro de su contenedor
-
-
-
-/*let contendorProductos = document.querySelector(".contenedor-productos");
-
-function mostrarProductos(listaProductos) {
-    let htmlProductos = "";
-
-    listaProductos.forEach(producto => {
-        htmlProductos += `
-            <div class="carta-producto">
-                <div class="contenedor-imagen-producto">
-                    <img class="imagen-producto" src="${producto.img}" alt="${producto.nombre}">
-                </div>
-                <div class="contenedor-nombre-producto">
-                    <h3 class="nombre-producto">${producto.nombre}</h3>
-                </div>
-                <div class="contenedor-precio-producto">
-                    <p class="precio-producto">$${producto.precio}</p>
-                </div>
-                <div class="contenedor-boton-producto">
-                    <button class="boton-agregar" data-id="${producto.id}">Agregar al carrito</button>
-                    <button class="boton-eliminar" data-id="${producto.id}">Eliminar del carrito</button>
-                </div>
-            </div>
-        `;
-    });
-    contendorProductos.innerHTML = htmlProductos;
-
-    document.querySelectorAll(".boton-agregar").forEach(boton => {
-        boton.addEventListener("click", function () {
-            const id = parseInt(this.dataset.id);
-            agregarAlCarrito(id)
-        });
-    });
-        document.querySelectorAll(".boton-agregar").forEach(boton => {
-        boton.addEventListener("click", function () {
-            const id = parseInt(this.dataset.id);
-            agregarAlCarrito(id)
-        });
-    });
-}
-
-*/
-
-
-//let contendorProductos = document.querySelector(".contenedor-productos");
 let contenedorPeliculas = document.querySelector(".contenedor-peliculas");
-let contenedorVideojuegos = document.querySelector(".contenedor-videojuegos");
+let contenedorSeries = document.querySelector(".contenedor-series");
 
 function mostrarProductos(listaProductos) {
     let htmlPeliculas = "";
-    let htmlVideojuegos = "";
+    let htmlSeries = "";
 
     listaProductos.forEach(producto => {
         let carta = `
@@ -231,11 +197,11 @@ function mostrarProductos(listaProductos) {
         `;
 
         if (producto.categoria === "Película") htmlPeliculas += carta;
-        else if (producto.categoria === "Videojuego") htmlVideojuegos += carta;
+        else if (producto.categoria === "Serie") htmlSeries += carta;
     });
 
     contenedorPeliculas.innerHTML = htmlPeliculas;
-    contenedorVideojuegos.innerHTML = htmlVideojuegos;
+    contenedorSeries.innerHTML = htmlSeries;
 
     document.querySelectorAll(".boton-agregar-producto").forEach(boton => {
         boton.addEventListener("click", function () {
@@ -250,8 +216,13 @@ function mostrarProductos(listaProductos) {
             eliminarDelCarrito(id);
         });
     });
-}
 
+    document.querySelectorAll(".imagen-producto").forEach(imagen => {
+        imagen.addEventListener("click", function () {
+            window.open(imagen.src, '_blank');
+        });
+    });
+}
 
 
 
@@ -289,7 +260,6 @@ function eliminarDelCarrito(id) {
 
     guardarCarrito(carrito);
 }
-
 
 
 
@@ -340,7 +310,7 @@ function vaciarCarrito() {
     guardarCarrito();
 }
 
-// =================    LIMPIAR CARRITO    =================
+// =================    INICIAR    =================
 //  *****   ****    *****       ***
 function init() {
     mostrarProductos(listaProductos);

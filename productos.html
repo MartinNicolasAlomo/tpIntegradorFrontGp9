@@ -13,16 +13,19 @@
     <!--  Logica JavaScript  -->
     <script defer src="js/productos.js"></script>
 
+    <!--  Favicon  -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
 
 </head>
 
 <body>
     <!-- Encabezado -->
     <header class="header">
-        <a href="#">
-            <h3 class="logo">Autoservicio</h3>
-        </a>
 
+        <a href="assets/img/logo.png" target="_blank">
+            <img src="assets/img/logo.png" alt="MediaVerse_Logo" class="logo">
+        </a>
         <nav>
             <a class="link" href="index.html">Inicio</a>
             <a class="link-referenciado" href="">Productos</a>
@@ -34,32 +37,25 @@
         <div class="nombre-alumno"></div>
         <input type="text" placeholder="Buscar..." class="barra-busqueda">
         <button id="boton-modo-oscuro">Modo Claro</button>
-
     </header>
-    <!--- <div class="contenedor-productos">
-                Carga dinamicamente los productos
-            </div>-->
+
 
     <!-- Contenedor principal -->
     <main>
 
         <section class="seccion-productos">
             <h1 class="titulo-principal">Productos Disponibles</h1>
-
             <div class="contenedor-productos">
                 <section class="seccion-peliculas">
                     <h3 class="titulo-peliculas">Películas</h3>
                     <div class="contenedor-peliculas"></div>
                 </section>
-                <section class="seccion-videojuegos">
-                    <h3 class="titulo-videojuegos">Videojuegos</h3>
-                    <div class="contenedor-videojuegos"></div>
+                <section class="seccion-series">
+                    <h3 class="titulo-series">Series</h3>
+                    <div class="contenedor-series"></div>
                 </section>
             </div>
-
-
         </section>
-
     </main>
 
 
@@ -67,14 +63,12 @@
     <footer>
         <section class="seccion-alumnos">
             <h1>GRUPO 9</h1>
-
             <div id="integrantes">
                 <h2>Nahuel Vega y Martín Alomo</h2>
             </div>
-
         </section>
     </footer>
-
+    
 </body>
 
 </html>

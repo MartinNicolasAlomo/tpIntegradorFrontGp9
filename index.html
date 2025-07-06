@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Autoservcicio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="img/logo2.png" type="image/x-icon">
-  <script defer src="js/main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Autoservcicio</title>
+
+    <!--  Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--  Logica JavaScript  -->
+    <script defer src="js/main.js"></script>
+
+
+    <!--  Favicon  -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!--  <link rel="icon" href="img/logo2.png" type="image/x-icon">-->
+
 </head>
+
 <body>
-  <header class="header">
-        <a href="#">
+    <header class="header">
+        <!-- <a href="#">
             <h3 class="logo">Autoservcicio</h3>
+        </a>-->
+        <a href="assets/img/logo.png" target="_blank">
+            <img src="assets/img/logo.png" alt="MediaVerse_Logo" class="logo">
         </a>
         <button id="boton-modo-oscuro">Modo Claro</button>
 
     </header>
-  <section class="bienvenida">
-    <div class="contenedor-bienvenida">
-        <p>Tus películas favoritas y los mejores juegos te esperan aquí, listos para que vivas cada historia, conquistes cada nivel y disfrutes de la mejor experiencia sin salir de casa.</p>
+    <section class="bienvenida">
+        <div class="contenedor-bienvenida">
+            <p>Tus películas favoritas y los mejores juegos te esperan aquí, listos para que vivas cada historia,
+                conquistes cada nivel y disfrutes de la mejor experiencia sin salir de casa.</p>
 
-        <div class="input-contenedor-bienvenida">
-            <label  id="nombreCli" for="nombre">Ingrese su nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." />
-            <button id="boton-continuar">Ingresar</button>
+            <div class="input-contenedor-bienvenida">
+                <label id="nombreCli" for="nombre">Ingrese su nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." />
+                <button id="boton-continuar">Ingresar</button>
+            </div>
         </div>
-    </div>
-  </section>
-  <!-- Footer y Datos de los Integrates del Grupo -->
-  <footer>
+    </section>
+    <!-- Footer y Datos de los Integrates del Grupo -->
+    <footer>
         <section class="seccion-alumnos">
             <h1>GRUPO 9</h1>
 
@@ -39,4 +55,5 @@
         </section>
     </footer>
 </body>
+
 </html>

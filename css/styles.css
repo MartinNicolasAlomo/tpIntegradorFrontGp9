@@ -25,15 +25,21 @@ h1 {
     margin-top: 20px;
 }
 
+
+
+/*//////////////////////////////////////////////*/
+/*                 ENCABEZADO                   */
+/*//////////////////////////////////////////////*/
+
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(232, 89, 37);
-    padding: 10px 20px;
     color: white;
-    flex-wrap: wrap;
     border-bottom: 2px solid rgb(19, 19, 19);
+    padding: 0px 20px; /*5px 20px */
 }
 
 header>a {
@@ -42,12 +48,9 @@ header>a {
 }
 
 .logo {
-    font-size: 1.4rem;
-}
-
-.logo>a {
-    text-decoration: none;
-    color: white;
+    width: 210px;
+    object-fit: contain;
+    display: block;
 }
 
 .barra-busqueda {
@@ -56,7 +59,6 @@ header>a {
     border: none;
     width: 275px;
     border: 1px solid rgb(19, 19, 19);
-    width: 275px;
 
 }
 
@@ -67,16 +69,38 @@ header>a {
 .link {
     background-color: rgb(232, 89, 37);
     color: rgb(19, 19, 19);
-    font-weight: bolder;
-    padding: 15px 20px;
+    font-weight: bold;
+    padding: 34px;
 }
+
+.link:hover {
+    transform: scale(1.03);
+    background-color: rgb(31, 26, 26);
+    color: rgb(37, 232, 141);
+    font-weight: bolder;
+    padding: 34px;
+}
+
 
 .link-referenciado {
     background-color: rgb(19, 19, 19);
     color: rgb(232, 89, 37);
-    font-weight: bolder;
-    padding: 15px 20px;
+    font-weight: bold;
+    padding: 34px;
 }
+
+
+.link-referenciado:hover {
+    transform: scale(1.03);
+    background-color: rgb(31, 26, 26);
+    color: rgb(37, 232, 141);
+    font-weight: bolder;
+    padding: 34px;
+}
+
+
+
+
 
 .contenedor {
     background-color: #ffe1c1;
@@ -228,8 +252,9 @@ body.dark-mode #boton-modo-oscuro {
     padding: 10px;
 }
 
+
 .seccion-peliculas,
-.seccion-videojuegos {
+.seccion-series {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +265,7 @@ body.dark-mode #boton-modo-oscuro {
 }
 
 .contenedor-peliculas,
-.contenedor-videojuegos {
+.contenedor-series {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -250,7 +275,7 @@ body.dark-mode #boton-modo-oscuro {
 }
 
 .titulo-peliculas,
-.titulo-videojuegos {
+.titulo-series {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -263,17 +288,26 @@ body.dark-mode #boton-modo-oscuro {
 }
 
 
-
 .titulo-peliculas {
     background-color: rgb(37, 146, 255);
     border: 2.3px solid rgb(15, 98, 180);
 }
-
-.titulo-videojuegos {
-    background-color: #27ae60;
-    border: 2.3px solid #1b8447;
+.titulo-series {
+    background-color: #e74c3c;
+    border: 2.3px solid #c0392b;
 }
 
+.titulo-peliculas:hover {
+    transform: scale(1.03);
+    background-color: rgb(87, 171, 255);
+    border: 2.3px solid rgb(37, 146, 255);
+}
+
+.titulo-series:hover {
+    transform: scale(1.03);
+    background-color: #e66c5e;
+    border: 2.3px solid #e74c3c;
+}
 
 .carta-producto {
     width: 180px;

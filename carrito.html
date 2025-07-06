@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoservicio </title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/carrito.js"></script>
-</head>
-<body>
-     <!-- Encabezado -->
-    <header class="header">
-        <a href="#">
-            <h3 class="logo">Autoservcicio</h3>
-        </a>
 
+    <title>Autoservicio </title>
+
+    <!--  Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--  Logica JavaScript  -->
+    <script defer src="js/carrito.js"></script>
+
+    <!--  Favicon  -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <!--    <a href="#">
+            <h3 class="logo">Autoservcicio</h3>
+        </a>-->
+        <a href="assets/img/logo.png" target="_blank">
+            <img src="assets/img/logo.png" alt="MediaVerse_Logo" class="logo">
+        </a>
         <nav>
             <a class="link" href="index.html">Inicio</a>
             <a class="link" href="productos.html">Productos</a>
@@ -29,9 +42,9 @@
 
     <section class="contenedor-carrito">
         <div class="titulo-carrito">
-            <h1 >Productos seleccionados</h1>
+            <h1>Productos seleccionados</h1>
         </div>
-       
+
         <div class="lista-producto" id="lista-producto">
             <!--Carga los productos del carrito dinamicamente-->
         </div>
@@ -44,7 +57,7 @@
         </div>
     </section>
 
-     <!-- Footer y Datos de los Integrates del Grupo -->
+    <!-- Footer y Datos de los Integrates del Grupo -->
     <footer>
         <section class="seccion-alumnos">
             <h1>GRUPO 9</h1>
@@ -56,4 +69,5 @@
         </section>
     </footer>
 </body>
+
 </html>
