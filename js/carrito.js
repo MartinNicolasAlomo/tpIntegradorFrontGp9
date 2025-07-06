@@ -118,6 +118,9 @@ function restarProducto(codigoProducto){
         const producto=carrito[i]
         if(producto.id==codigoProducto){
             producto.cantidad=producto.cantidad - 1
+            if(producto.cantidad <= 0){
+                EliminarProducto(codigoProducto)
+            }
             actualizoCarrito=true;
             break;
         }

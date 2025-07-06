@@ -34,6 +34,7 @@ botonModoOscuro.addEventListener("click", function () {
 
 function init(){
   configurarBotonContinuar();
+  localStorage.setItem("nombreCliente","");
 }
 
 init();

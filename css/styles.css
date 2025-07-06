@@ -20,8 +20,6 @@ body.dark-mode {
     color: rgb(255, 255, 255);
 }
 
-
-
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -58,6 +56,7 @@ header>a {
     border: none;
     width: 275px;
     border: 1px solid rgb(19, 19, 19);
+    width: 275px;
 
 }
 
@@ -69,14 +68,14 @@ header>a {
     background-color: rgb(232, 89, 37);
     color: rgb(19, 19, 19);
     font-weight: bolder;
-    padding: 30px;
+    padding: 15px 20px;
 }
 
 .link-referenciado {
     background-color: rgb(19, 19, 19);
     color: rgb(232, 89, 37);
     font-weight: bolder;
-    padding: 30px;
+    padding: 15px 20px;
 }
 
 .contenedor {
@@ -95,7 +94,7 @@ header>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 7.8rem;
 }
 
 body.dark-mode .bienvenida {
@@ -596,8 +595,72 @@ body.dark-mode .info button:hover {
 /*//////////////////////////////////////////////////////*/
 /*                 SECCION RESPONSIVE                    */
 /*//////////////////////////////////////////////////////*/
-@media (max-width:700px) {
+@media (max-width:1000px) {
     header {
         flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .nav{
+        justify-content: center;
+        width: 100%;
+    }
+    .barra-busqueda{
+        width: 98%;
+    }
+    #boton-limpiar-carrito,
+    #boton-modo-oscuro{
+        width: 100%;
+    }
+}
+
+@media (max-width:760px){
+    .contenedor-productos{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carta-producto{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .contenedor-nombre-producto{
+        height: auto;
+    }
+
+    .titulo-peliculas,
+    .titulo-videojuegos{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    .contenedor-bienvenida{
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .carta-producto{
+        width: 100%;
+    }
+
+    .barra-busqueda{
+        width: 100%;
+    }
+    .input-contenedor-bienvenida input{
+        width: 50%;
+    }
+
+    nav a{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    #boton-limpiar-carrito,
+    #boton-modo-oscuro{
+        width: 100%;
     }
 }
