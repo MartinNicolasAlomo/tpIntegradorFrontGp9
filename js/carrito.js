@@ -18,7 +18,7 @@ function mostrarCarrito(){
         const div = document.createElement("div");
         div.classList.add("producto-carrito");
         div.innerHTML=` 
-            <img src="${producto.img}" alt="${producto.nombre}">
+            <img src="${producto.imagen}" alt="${producto.nombre}">
             <div class="info-producto">
                 <p><strong>${producto.nombre}</strong></p>
                 <p>Precio unitario: $${producto.precio}</p>

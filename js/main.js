@@ -35,6 +35,10 @@ botonModoOscuro.addEventListener("click", function () {
 function init(){
   configurarBotonContinuar();
   localStorage.setItem("nombreCliente","");
+  //Si el carrito existe, lo elimino siempre que vuelvo al index
+  if (localStorage.getItem("carrito") !== null) {
+    localStorage.removeItem("carrito");
+  }
 }
 
 init();
